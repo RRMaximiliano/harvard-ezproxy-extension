@@ -1,0 +1,11 @@
+// manifest.json
+{
+  "name": "Harvard EZProxy Redirect",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Redirect the active page through Harvard Library EZProxy.",
+  "permissions": ["activeTab", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "action": { "default_title": "EZProxy" },
+  "background": { "service_worker": "background.js" }
+}
